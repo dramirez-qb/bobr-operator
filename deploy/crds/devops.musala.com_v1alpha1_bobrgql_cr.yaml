@@ -1,0 +1,9 @@
+apiVersion: devops.musala.com/v1alpha1
+kind: BobRGQL
+metadata:
+  name: bob-gql
+spec:
+  # Add fields here
+  size: 3
+  image: dxas90/bobrgql:v0.0.3
+  replicas: 1

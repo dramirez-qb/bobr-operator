@@ -1,0 +1,9 @@
+apiVersion: devops.musala.com/v1alpha1
+kind: BobRCrypto
+metadata:
+  name: bob-crypto
+spec:
+  # Add fields here
+  size: 3
+  image: dxas90/bobrcrypto:v0.0.1
+  replicas: 1

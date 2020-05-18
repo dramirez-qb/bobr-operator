@@ -1,0 +1,9 @@
+apiVersion: devops.musala.com/v1alpha1
+kind: BobRGeo
+metadata:
+  name: bob-geo
+spec:
+  # Add fields here
+  size: 3
+  image: dxas90/bobrgeo:v0.0.2
+  replicas: 1
