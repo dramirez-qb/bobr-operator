@@ -3,7 +3,5 @@ kind: BobRDB
 metadata:
   name: bob-db
 spec:
-  # Add fields here
-  size: 3
   image: dxas90/bobrdb:v0.0.1
   replicas: 1

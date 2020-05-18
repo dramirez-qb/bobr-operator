@@ -37,7 +37,7 @@ var (
 	metricsPort         int32 = 8383
 	operatorMetricsPort int32 = 8686
 )
-var log = logf.Log.WithName("cmd")
+var log = logf.Log.WithName("bobr-operator")
 
 func printVersion() {
 	log.Info(fmt.Sprintf("Operator Version: %s", version.Version))
@@ -143,7 +143,7 @@ func main() {
 		}
 	}
 
-	log.Info("Starting the Cmd.")
+	log.Info("Starting the Operator.")
 
 	// Start the Cmd
 	if err := mgr.Start(signals.SetupSignalHandler()); err != nil {

@@ -12,7 +12,7 @@ type BobRGQLSpec struct {
 	// Image to deploy
 	Image string `json:"image,omitempty"`
 	// Replicas that we need
-	Replicas int `json:"replicas,omitempty"`
+	Replicas int32 `json:"replicas,omitempty"`
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "operator-sdk generate k8s" to regenerate code after modifying this file
 	// Add custom validation using kubebuilder tags: https://book-v1.book.kubebuilder.io/beyond_basics/generating_crd.html
@@ -20,7 +20,7 @@ type BobRGQLSpec struct {
 
 // BobRGQLStatus defines the observed state of BobRGQL
 type BobRGQLStatus struct {
-	Replicas      int    `json:"replicas,omitempty"`
+	Replicas      int32  `json:"replicas,omitempty"`
 	LabelSelector string `json:"labelselector,omitempty"`
 	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
 	// Important: Run "operator-sdk generate k8s" to regenerate code after modifying this file
